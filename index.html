@@ -1,4 +1,3 @@
-<!-- se1a08 HanYiSoe 2025/06/03 -->
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -11,7 +10,6 @@
 
 <body>
 
-    <!-- Language Switch -->
     <div class="language-switch">
         <button data-lang="ja" class="lang-btn active">日本語</button>
         <button data-lang="en" class="lang-btn">English</button>
@@ -56,7 +54,6 @@
 
     <main>
 
-        <!-- About -->
         <section id="summary">
             <h3>
                 <span class="lang ja">自己紹介</span>
@@ -91,14 +88,24 @@
             <p class="lang ja">
                 <strong>メール：</strong>
                 <a href="mailto:hanyisoe9@gmail.com">hanyisoe9@gmail.com</a>
+                <a href="https://github.com/hanyisoe" target="_blank" class="github-icon-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"
+                        style="width:24px; vertical-align:middle;">
+                    GitHub
+                </a>
             </p>
 
             <p class="lang en">
                 <strong>Email:</strong>
                 <a href="mailto:hanyisoe9@gmail.com">hanyisoe9@gmail.com</a>
+                <a href="https://github.com/hanyisoe" target="_blank" class="github-icon-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"
+                        style="width:24px; vertical-align:middle;">
+                    GitHub
+                </a>
             </p>
         </section>
-        <!-- Future -->
+        
         <section id="future">
             <h3>
                 <span class="lang ja">将来的に目指すこと</span>
@@ -149,15 +156,12 @@
             </p>
         </section>
 
-
-        <!-- Projects -->
         <section id="projects">
             <h3>
                 <span class="lang ja">プロジェクト紹介</span>
                 <span class="lang en">Projects</span>
             </h3>
 
-            <!-- ===== Japanese ===== -->
             <div class="lang ja">
 
                 <div class="project-card">
@@ -213,7 +217,6 @@
 
             </div>
 
-            <!-- ===== English ===== -->
             <div class="lang en">
 
                 <div class="project-card">
@@ -265,7 +268,7 @@
 
             </div>
         </section>
-        <!-- Education -->
+       
         <section id="education">
             <h3>
                 <span class="lang ja">学歴</span>
@@ -297,7 +300,6 @@
             </div>
         </section>
 
-        <!-- Skills -->
         <section id="skill">
             <h3>
                 <span class="lang ja">スキル</span>
@@ -367,8 +369,7 @@
         <span class="lang ja">©2025 Han Yi Soe | ご覧いただきありがとうございます。</span>
         <span class="lang en">©2025 Han Yi Soe | Thank you for visiting.</span>
     </footer>
-
-    <!-- Language Switch JS (そのまま使えます) -->
+ 
     <script>
 
         document.addEventListener("DOMContentLoaded", function () {
@@ -380,7 +381,6 @@
                 } else {
                     body.classList.remove("lang-en");
                 }
-                // ボタンの活性化状態を切り替え
                 buttons.forEach(btn => {
                     btn.classList.toggle("active", btn.dataset.lang === lang);
                 });
@@ -389,7 +389,6 @@
             buttons.forEach(button => {
                 button.addEventListener("click", () => setLanguage(button.dataset.lang));
             });
-            // 保存された言語を適用（デフォルトは ja）
             const savedLang = localStorage.getItem("lang") || "ja";
             setLanguage(savedLang);
         });
