@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Pyramid Tracker - Main Page</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body data-page="main">
+    <header>
+        <h1 id="mainTitle">Food Pyramid Tracker</h1>
+        <p id="mainSubtitle">毎日の食事を記録して、健康的な食生活をサポート！</p>
+        <nav class="lang-switch">
+            <label for="langSelect" id="langLabel">🌐言語</label>
+            <select id="langSelect">
+                <option value="jp">日本語</option>
+                <option value="en">English</option>
+                <option value="mm">မြန်မာ</option>
+            </select>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card main-card">
+            <img src="img/photo-chicken_horizontal.jpg" alt="Healthy Meal" class="main-img" width="250">
+            <h2 id="recordTitle">今日の食事を記録する</h2>
+            <p id="recordDesc">あなたの食事内容を入力して、足りない栄養をチェック！</p>
+            <a href="food.html" id="recordBtn" class="main-btn">➡ 食事を記録する</a>
+        </section>
+
+        <section class="card main-card">
+            <img src="img/adult_eng.jpg" alt="Food Groups" class="main-img" width="250">
+            <h2 id="learnTitle">食事グループについて学ぶ</h2>
+            <p id="learnDesc">穀類・タンパク質・野菜・果物・乳製品・脂質の6つのグループを学ぼう。</p>
+            <a href="groups.html" id="learnBtn" class="main-btn">➡ 詳しく見る</a>
+        </section>
+
+        <section class="card main-card">
+            <img src="img/meal history.jpg" alt="Meal History" class="main-img" width="200">
+            <h2 id="historyTitle">食事履歴を見る</h2>
+            <p id="historyDesc">
+                これまでに記録した食事内容と栄養バランスを確認できます。
+            </p>
+            <a href="history.html" id="historyBtn" class="main-btn">➡ 履歴を見る</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2025 Han Yi Soe. All rights reserved.</p>
+    </footer>
+
+    <script src="project.js"></script>
+
+
+</body>
+
+</html>

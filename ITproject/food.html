@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Pyramid Tracker - Food</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body data-page="food">
+    <header>
+        <h1 id="title">毎日を栄養たっぷりの一皿に</h1>
+        <nav class="lang-switch">
+            <label for="langSelect" id="langLabel">🌐言語</label>
+            <select id="langSelect">
+                <option value="jp">日本語</option>
+                <option value="en">English</option>
+                <option value="mm">မြန်မာ</option>
+            </select>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2 id="inputTitle">今日食べたものを入力してください :</h2>
+            <div class="input-group">
+                <input type="text" id="foodInput" placeholder="例 : ご飯, 魚, 牛乳" />
+                <button id="addBtn">➕追加</button>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3 id="listTitle">今日入力した食品</h3>
+            <ul id="foodList" class="food-list"></ul>
+        </section>
+
+        <section class="card center">
+            <button id="submitBtn" class="submit-btn">✅登録</button>
+        </section>
+
+        <section class="card result">
+            <h2 id="resultTitle">結果</h2>
+            <div id="resultArea"></div>
+        </section>
+
+        <section class="card center">
+            <a href="index.html" class="main-btn">🏠 メインページに戻る</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2025 Han Yi Soe. All rights reserved.</p>
+    </footer>
+
+    <script src="project.js"></script>
+</body>
+
+</html>
